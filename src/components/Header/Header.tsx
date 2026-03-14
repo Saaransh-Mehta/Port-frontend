@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (
@@ -14,9 +15,9 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className="flex gap-6">
-          <div className="relative">
+          <Link to="projects" smooth={true} duration={800} className="relative group cursor-pointer">
             <svg
-              className="absolute -top-3 left-0 right-0"
+              className="absolute -top-3 left-0 right-0 group-hover:block"
               width="100%"
               height="8"
               viewBox="0 0 120 8"
@@ -39,11 +40,11 @@ const Header = () => {
               <ArrowUpRight className="w-4 h-4" />
             </div>
             <p className="text-xs mt-1 outfit">See all of nice project I have done.</p>
-          </div>
+          </Link>
 
-          <div className="relative cursor-pointer">
+          <Link to="exp" smooth={true} duration={800} className="relative group cursor-pointer">
             <svg
-              className="absolute -top-3 left-0 right-0"
+              className="absolute -top-3 left-0 right-0 group-hover:block"
               width="100%"
               height="8"
               viewBox="0 0 120 8"
@@ -66,11 +67,11 @@ const Header = () => {
               <ArrowUpRight className="w-4 h-4" />
             </div>
             <p className="text-xs mt-1 outfit">Learn about my self what I do</p>
-          </div>
+          </Link>
 
-          <div className="relative cursor-pointer">
+          <a href="mailto:saaransh1621m@gmail.com" className="relative group cursor-pointer block">
             <svg
-              className="absolute -top-3 left-0 right-0"
+              className="absolute -top-3 left-0 right-0 group-hover:block"
               width="100%"
               height="8"
               viewBox="0 0 120 8"
@@ -93,7 +94,7 @@ const Header = () => {
               <ArrowUpRight className="w-4 h-4" />
             </div>
             <p className="text-xs mt-1 outfit">saaransh1621m@gmail.com</p>
-          </div>
+          </a>
         </nav>
       </div>
     </header>

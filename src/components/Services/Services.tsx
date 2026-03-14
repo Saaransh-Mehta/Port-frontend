@@ -50,7 +50,7 @@ const Services = () => {
           {/* Social Links */}
           <div className="flex items-center gap-8">
             <div className="h-px bg-gray-300 w-20"></div>
-            <a href="#" className="flex items-center gap-2 text-sm hover:opacity-70 transition-opacity">
+            <a href="https://github.com/Saaransh-Mehta" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:opacity-70 transition-opacity">
             <svg
                     width="24"
                     height="24"
@@ -68,7 +68,7 @@ const Services = () => {
 
               <span className="uppercase bbh-bartle-regular tracking-wide">Github</span>
             </a>
-            <a href="#" className="flex items-center gap-2 text-sm hover:opacity-70 transition-opacity">
+            <a href="https://www.linkedin.com/in/saaransh-mehta-242876215/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:opacity-70 transition-opacity">
             <svg
                 width="24"
                 height="24"
@@ -82,7 +82,7 @@ const Services = () => {
 
               <span className="uppercase bbh-bartle-regular tracking-wide">LinkedIn</span>
             </a>
-            <a href="#" className="flex items-center gap-2 text-sm hover:opacity-70 transition-opacity">
+            <a href="https://www.instagram.com/saaransh.builds/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:opacity-70 transition-opacity">
             <svg
                     width="24"
                     height="24"

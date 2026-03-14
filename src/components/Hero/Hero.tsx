@@ -96,18 +96,11 @@ const handleDownload = () => {
           </div>
 
           {/* Right Content - Image */}
-          <div className="relative">
+          <div className="relative mt-24">
             {/* Decorative elements */}
             <div className="absolute -top-10 -right-10 w-64 h-64">
               <div className="absolute rotate-12 w-48 h-0.5 bg-black right-0"></div>
               <div className="absolute w-24 h-24 border-4 border-black rounded-full -right-4 top-8"></div>
-            </div>
-
-            {/* Hello circle */}
-            <div className="absolute left-0 top-1/3 z-20">
-              <div className="bg-black text-white rounded-full w-32 h-32 flex items-center justify-center">
-                <span className="text-3xl font-light outfit italic">Hello</span>
-              </div>
             </div>
 
             {/* Decorative line bottom right */}
@@ -117,13 +110,33 @@ const handleDownload = () => {
               </svg>
             </div>
 
-            {/* Profile Image Placeholder */}
-            <div className="relative z-10 rounded-2xl overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 aspect-[3/4]">
-              <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop" 
-                alt="Profile" 
-                className="w-full h-full object-cover"
-              />
+            {/* Code Window Alternative (instead of Profile Image) */}
+            <div className="relative z-10 rounded-2xl overflow-hidden bg-white/50 backdrop-blur-md shadow-xl flex flex-col font-mono text-sm sm:text-base border border-gray-200">
+              {/* Terminal Header */}
+              <div className="w-full h-12 bg-gray-100/80 flex items-center px-4 gap-2 border-b border-gray-200">
+                <div className="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
+                <div className="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
+                <div className="w-3 h-3 rounded-full bg-[#27C93F]"></div>
+                <div className="ml-2 flex-1 text-center text-gray-500 text-xs font-sans tracking-wider font-medium">saaransh.ts</div>
+              </div>
+              
+              {/* Code Content */}
+              <div className="p-6 sm:p-8 text-gray-800 flex-1 overflow-x-auto">
+                <p><span className="text-pink-600">const</span> <span className="text-blue-600">saaransh</span> <span className="text-pink-600">=</span> {'{'}</p>
+                <p className="ml-4"><span className="text-teal-600">role:</span> <span className="text-yellow-600">'FullStack Engineer'</span>,</p>
+                <p className="ml-4"><span className="text-teal-600">skills:</span> [</p>
+                <p className="ml-8"><span className="text-yellow-600">'Frontend Development'</span>,</p>
+                <p className="ml-8"><span className="text-yellow-600">'Backend Engineering'</span>,</p>
+                <p className="ml-8"><span className="text-yellow-600">'System Design'</span></p>
+                <p className="ml-4">],</p>
+                <p className="ml-4"><span className="text-teal-600">focus:</span> <span className="text-yellow-600">'Product-driven systems'</span>,</p>
+                <p className="ml-4"><span className="text-teal-600">coffee_consumed:</span> <span className="text-purple-600">Infinity</span>,</p>
+                <p className="ml-4"><span className="text-green-600">solveProblems:</span> () <span className="text-pink-600">{'=>'}</span> {'{'}</p>
+                <p className="ml-8"><span className="text-pink-600">return</span> <span className="text-orange-500">"Build real things"</span>;</p>
+                <p className="ml-4">{'}'}</p>
+                <p>{'};'}</p>
+                <p className="mt-4"><span className="text-pink-600">export default</span> <span className="text-blue-600">saaransh</span>;</p>
+              </div>
             </div>
 
             {/* Diagonal line top left */}

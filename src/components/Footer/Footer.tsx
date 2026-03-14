@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="flex mt-6 mb-2 justify-between items-center">
             <div className="footer-link">
                 <ul className="flex flex-row gap-5">
-                    <li className="outfit">Github</li>
-                    <li className="outfit">LinkedIn</li>
-                    <li className="outfit">Instagram</li>
+                    <li className="outfit"><a href="https://github.com/Saaransh-Mehta" target="_blank" rel="noopener noreferrer" className="hover:underline">Github</a></li>
+                    <li className="outfit"><a href="https://www.linkedin.com/in/saaransh-mehta-242876215/" target="_blank" rel="noopener noreferrer" className="hover:underline">LinkedIn</a></li>
+                    <li className="outfit"><a href="https://www.instagram.com/saaransh.builds/" target="_blank" rel="noopener noreferrer" className="hover:underline">Instagram</a></li>
                 </ul>
             </div>
             <div className="footer-email">

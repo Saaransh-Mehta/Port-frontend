@@ -27,7 +27,7 @@ const Projects = () => {
   ];
 
   return (
-    <section className="py-20 px-8 bg-white relative overflow-hidden">
+    <section id="projects" className="py-20 px-8 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Decorative Elements */}
         {/* Dot grid pattern top left */}

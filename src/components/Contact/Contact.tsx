@@ -30,7 +30,8 @@ const Contact = () => {
 
   const handleSubmit = async(e: React.FormEvent) => {
     e.preventDefault();
-    const response = await axios.post('http://localhost:5000/api/send',{
+    const backendUrl = import.meta.env.VITE_VERCEL_BACKEND || 'http://localhost:5000';
+    const response = await axios.post(`${backendUrl}/api/send`,{
       fromEmail:formData.email,
       name:formData.name,
       company:formData.company,
